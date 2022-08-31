@@ -39,7 +39,7 @@ ol {
 .header {
     width: 100%;
     background: transparent;
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
@@ -63,7 +63,7 @@ ol {
     color: #fff;
 }
 
-.navbar-area {
+.navbar-field {
     width: 100%;
     z-index: 99;
     transition: all 0.3s ease-out;
@@ -212,7 +212,6 @@ ol {
 .button {
     margin-left: 0 !important;
     display: inline-block;
-    margin-left: 10px;
 }
 
 .button .signin {
@@ -295,7 +294,7 @@ ol {
     background: #333;
 }
 
-.navbar-area.sticky {
+.navbar-field.sticky {
     position: fixed;
     transition: all 0.3s ease-out;
     z-index: 99;
@@ -326,13 +325,13 @@ ol {
 /* for mobile devices */
 
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     .container {
         width: 450px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
         padding: 18px 0 !important;
     }
@@ -463,4 +462,192 @@ ol {
         background-color: #fd723b;
         color: #fff;
     }
+}
+
+/* main section */
+.main {
+    position: relative;
+    background-color: #fff;
+    padding: 220px 0 160px 0;
+}
+
+.main .circle1 {
+    top: -98px;
+    right: calc(50% - 1180px);
+    width: 1000px;
+    height: 1000px;
+    background: #3080E3;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.main .circle2 {
+    right: calc(50% - 270px);
+    bottom: -75px;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    background: #FAB8C4;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.main .circle3 {
+    top: -180px;
+    left: -180px;
+    width: 350px;
+    height: 350px;
+    background: #fd723b;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.main .circle4 {
+    top: 44%;
+    left: 30px;
+    width: 48px;
+    height: 48px;
+    background: #FAB8C4;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.main .main-img {
+    z-index: 4;
+    position: relative;
+    box-shadow: 0px 0px 30px #0000000f;
+    border-radius: 20px;
+}
+
+.main .main-img .circle5 {
+    top: -45px;
+    left: -45px;
+    width: 110px;
+    height: 110px;
+    background: #FAB8C4;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.main .main-content {
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.main .main-content h1 {
+    font-weight: 700;
+    margin-bottom: 18px;
+    font-size: 38px;
+    overflow: hidden;
+    line-height: 53px;
+    color: #151515;
+}
+
+.main .main-content h1 span.orange {
+    color: #fd723b;
+}
+
+.main .main-content p {
+    font-weight: 400;
+    color: #313131;
+    line-height: 28px;
+    margin: 28px 0;
+    font-size: 16px;
+}
+
+.main .main-content .button {
+    margin-top: 30px;
+}
+
+.button .btn {
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 500;
+    padding: 16px 30px;
+    overflow: hidden;
+    background-color: #3080E3;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.button .btn:hover {
+    color: #fff;
+    background-color: #fd723b;
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .main {
+        padding: 110px 0 60px 0;
+    }
+
+    .main .circle1 {
+        display: none;
+    }
+
+    .main .circle2 {
+        display: none;
+    }
+
+    .main .circle3 {
+        display: none;
+    }
+
+    .main .circle4 {
+        display: none;
+    }
+
+    .main .main-img {
+        margin-top: 40px;
+    }
+
+    .main .main-img .circle5 {
+        display: none;
+    }
+
+    .main .main-content .button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .main .main-content .button .btn {
+        width: 100%;
+    }
+
+    .main .main-content {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .main .main-content h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .main .main-content p {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .main .main-content .button .btn {
+        width: 60%;
+        margin: 0 0 7px 0;
+    }
+
+    .button .btn {
+        padding: 14px 25px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
 }
