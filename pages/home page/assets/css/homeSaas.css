@@ -1373,3 +1373,74 @@ ol {
         margin-bottom: 20px;
     }
 }
+
+/* call section */
+.call-action {
+    background-color: #fff;
+}
+
+.call-action .inner-content {
+    position: relative;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #3080E3;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.call-action .inner-content .bg-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.call-action .text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #fff;
+}
+
+.call-action .text h2 span {
+    display: block;
+    color: #3080E3;
+}
+
+.call-action .button {
+    float: right;
+}
+
+.call-action .button .btn {
+    background-color: #fff;
+    color: #151515;
+}
+
+.call-action .button .btn:hover {
+    background-color: #fd723b;
+    color: #fff;
+}
+
+.call-action .button .btn.btn-alt:hover {
+    background-color: #151515 !important;
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .call-action .inner-content {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .call-action .text h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .call-action .btn-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
