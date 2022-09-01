@@ -651,3 +651,148 @@ ol {
     }
 
 }
+
+/* service section  */
+.services {
+    background-color: #F4F7FA;
+}
+
+.section {
+    padding: 110px 0;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0 300px;
+    position: relative;
+    z-index: 5;
+}
+
+.section-title h3 {
+    font-size: 15px;
+    padding: 8px 30px;
+    font-weight: 500;
+    border: 2px solid #3080E3;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3080E3;
+    border-radius: 30px;
+}
+
+.section-title h2 {
+    position: relative;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 42px;
+    color: #151515;
+}
+
+.section-title p {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.services .section-title {
+    margin-bottom: 50px;
+}
+
+.single-service {
+    padding: 35px;
+    margin-top: 30px;
+    border-radius: 18px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
+    background-color: #fff;
+}
+
+.single-service .service-icon {
+    height: 65px;
+    box-shadow: 0px 10px 30px rgba(48, 128, 227, 0.18);
+    line-height: 65px;
+    font-size: 30px;
+    background-color: #3080E3;
+    border-radius: 15px;
+    width: 65px;
+    color: #fff;
+    text-align: center;
+}
+
+.single-service h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.single-service p {
+    font-size: 16px;
+}
+
+.single-service a {
+    color: #3080E3;
+    margin-top: 40px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.single-service a i {
+    font-size: 22px;
+    margin-left: 12px;
+    position: relative;
+    top: 3px;
+}
+
+.single-service a:hover {
+    letter-spacing: 1px;
+}
+
+.single-service.second .service-icon {
+    background-color: #fd723b;
+    box-shadow: 0px 10px 30px rgba(253, 114, 59, 0.25);
+}
+
+.single-service.second a {
+    color: #fd723b;
+}
+
+.single-service.third .service-icon {
+    background-color: #FFA842;
+    box-shadow: 0px 10px 30px rgba(255, 168, 66, 0.26);
+}
+
+.single-service.third a {
+    color: #FFA842;
+}
+
+/* for mobile devices */
+@media (max-width: 767px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        padding: 0px 10px;
+        margin-bottom: 40px;
+    }
+
+    .section-title h3 {
+        font-size: 13px;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 18px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+    }
+
+    .services .section-title {
+        margin-bottom: 30px;
+    }
+}
