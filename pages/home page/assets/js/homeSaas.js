@@ -8,3 +8,7 @@ window.onscroll = function () {
     }
 };
 AOS.init();
+
+let counter=document.querySelector(".row .row");
+let counter_Up=new counterUp(counter);
+counter_Up.start();

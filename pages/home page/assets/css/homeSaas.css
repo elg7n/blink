@@ -1109,3 +1109,46 @@ ol {
         font-weight: 500;
     }
 }
+
+
+/* achievement section */
+.achievement .single-achievement{
+    text-align: center;
+}
+.achievement .single-achievement h3 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+}
+
+.achievement .single-achievement h3 .shape {
+    position: absolute;
+    left: -20px;
+    top: -15px;
+    z-index: -1;
+    height: 55px;
+    width: 55px;
+}
+.counter{
+    color: #151515;
+}
+.achievement .row .row{
+    margin: 0 auto;
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .achievement .single-achievement {
+        padding: 20px 0;
+    }
+
+    .achievement .single-achievement h3 {
+        font-size: 26px;
+    }
+
+    .achievement .single-achievement p {
+        margin-top: 10px;
+    }
+}
