@@ -968,14 +968,15 @@ ol {
 .about .content .action-button h4 a:hover {
     letter-spacing: 1px;
 }
+
 .about .content .action-button h4 a i {
     display: inline-block;
     position: relative;
     top: 3px;
     margin-left: 8px;
     font-size: 20px;
-  }
-  
+}
+
 
 /* for mobile devices */
 @media (max-width: 768px) {
@@ -987,5 +988,124 @@ ol {
         font-weight: 700;
         line-height: 34px;
         font-size: 24px;
+    }
+}
+
+/* pricing section */
+.pricing-table {
+    background-color: #F4F7FA;
+}
+
+.pricing-table .section-title {
+    margin-bottom: 50px;
+}
+
+.pricing-table .single-table {
+    border: 1px solid #eee;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    padding: 50px 35px;
+    text-align: center;
+}
+
+.pricing-table .single-table:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
+}
+
+.pricing-table .single-table.middle .table-head .title {
+    border-color: #fd723b;
+    color: #fd723b;
+}
+
+.pricing-table .single-table .table-head .title {
+    border: 2px solid #3080e3;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #3080e3;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.pricing-table .single-table .table-head p {
+    font-weight: 400;
+}
+
+.pricing-table .single-table .table-head .price {
+    padding-top: 30px;
+    color: #151515;
+}
+
+.pricing-table .single-table .table-head .price .amount {
+    position: relative;
+    font-size: 45px;
+    padding-left: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.pricing-table .single-table .table-head .price .amount .currency {
+    position: absolute;
+    font-weight: 400;
+    top: 6px;
+    color: #888;
+    left: 0;
+    font-size: 17px;
+}
+
+.pricing-table .single-table .table-head .price .amount .duration {
+    margin-left: 3px;
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+}
+
+.pricing-table .single-table .button {
+    margin: 30px 0 40px 0;
+}
+
+.pricing-table .single-table .button .btn {
+    text-transform: none;
+    padding: 14px 35px;
+}
+
+.button .btn-alt {
+    background-color: #fd723b !important;
+    color: #fff !important;
+}
+
+.button .btn-alt:hover {
+    background-color: #3080E3 !important;
+    color: #fff !important;
+}
+
+
+.pricing-table .single-table .table-content .table-list li {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.pricing-table .single-table .table-content .table-list li:last-child {
+    margin: 0;
+}
+
+
+/* for mobile devices */
+
+@media (max-width: 768px) {
+    .pricing-table .section-title {
+        margin-bottom: 20px;
+    }
+
+    .button .btn-alt {
+        padding: 14px 25px;
+        font-size: 14px;
+        font-weight: 500;
     }
 }
