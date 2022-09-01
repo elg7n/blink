@@ -802,9 +802,11 @@ ol {
 .process img {
     width: 100%;
 }
-.process .content{
+
+.process .content {
     padding-left: 50px;
 }
+
 .process .content h4 {
     margin-bottom: 20px;
     color: #3080E3;
@@ -867,5 +869,123 @@ ol {
 @media (max-width: 768px) {
     .process .content {
         margin-top: 50px;
+    }
+}
+
+/* about section */
+.about {
+    position: relative;
+    background-color: #151515;
+    z-index: 0;
+}
+
+.about .fig-1 {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    left: -184px;
+    top: 0;
+    z-index: -1;
+}
+
+.about .fig-1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.about .fig-2 {
+    position: absolute;
+    width: 665px;
+    height: 665px;
+    right: -126px;
+    bottom: -66px;
+    z-index: -1;
+}
+
+.about .fig-2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about .content h4 {
+    color: #3080E3;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.about .content h2 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.about .content p {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.about .content .action-button {
+    margin-top: 50px;
+    display: flex;
+}
+
+.about .content .action-button .btn-icon {
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background-color: #3080E3;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.about .content .action-button h4 {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.about .content .action-button h4 a {
+    color: #3080E3;
+    display: block;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.about .content .action-button h4 a:hover {
+    letter-spacing: 1px;
+}
+.about .content .action-button h4 a i {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .about .content {
+        margin-bottom: 50px;
+    }
+
+    .about .content h2 {
+        font-weight: 700;
+        line-height: 34px;
+        font-size: 24px;
     }
 }
