@@ -149,7 +149,7 @@ ol {
 .navbar-nav .nav-item .sub-menu .nav-item a {
     padding: 0;
     overflow: hidden;
-    color: #888;
+    color: #888 !important;
     display: block;
     font-weight: 500;
     position: relative;
@@ -724,6 +724,7 @@ ol {
     font-weight: 600;
     margin-bottom: 20px;
     margin-top: 40px;
+    color: #151515;
 }
 
 .single-service p {
@@ -794,5 +795,77 @@ ol {
 
     .services .section-title {
         margin-bottom: 30px;
+    }
+}
+
+/* process section */
+.process img {
+    width: 100%;
+}
+.process .content{
+    padding-left: 50px;
+}
+.process .content h4 {
+    margin-bottom: 20px;
+    color: #3080E3;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.process .content h2 {
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 35px;
+    color: #151515;
+}
+
+.process .content p {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.process .content .list .single-list {
+    position: relative;
+    padding-left: 80px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.process .content .list .single-list .list-icon {
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    color: #3080E3;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 7px 10px #0000000a;
+    font-size: 22px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+}
+
+.process .content .list .single-list:hover .list-icon {
+    background-color: #3080E3;
+    color: #fff;
+}
+
+.process .content .list .single-list h4 {
+    color: #151515;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.process .content .list .single-list p {
+    margin: 0;
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .process .content {
+        margin-top: 50px;
     }
 }
