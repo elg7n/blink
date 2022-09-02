@@ -6,7 +6,18 @@ window.onscroll = function () {
     } else {
         header.classList.remove("sticky");
     }
+
+    var scrollUp = document.querySelector(".scroll-top");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        scrollUp.style.display = "flex";
+    } else {
+        scrollUp.style.display = "none";
+    }
+    scrollUp.addEventListener("click",function(){
+        window.pageYOffset=0;
+    })
 };
+
 AOS.init();
 
 let counter = document.querySelector(".row .row");
@@ -23,8 +34,8 @@ $(".owl-carousel").owlCarousel({
         600: {
             items: 1,
         },
-        1000:{
-            items:2,
+        1000: {
+            items: 2,
         }
     }
 });
