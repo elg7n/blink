@@ -95,7 +95,7 @@
     }
 
     .passage .passage-nav {
-        text-align: center;
+        justify-content: center !important;
         margin-top: 15px;
     }
 }
