@@ -237,3 +237,26 @@
         margin-top: 20px;
     }
 }
+
+/* customers logo */
+.customer-logo {
+    background-color: #f4f7Fa;
+    padding: 60px 0;
+}
+
+.customer-logo .single-logo {
+    padding: 0 30px;
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .customer-logo .single-logo {
+        padding: 15px 30px;
+        border: 1px solid #eee;
+        background: #fff;
+    }
+
+    .customer-logo .single-logo img {
+        width: 75%;
+    }
+}
