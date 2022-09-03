@@ -406,11 +406,15 @@ ol {
         margin-right: 15px;
         padding: 0;
     }
+     /* up/down arrow for hamburger dropdown .i use setProperty.because i couldn't select pseudo elements*/
+    :root {
+        --transform: 0deg;
+    }
 
     .navbar-nav .nav-item a.dd-menu::after {
         top: 18px;
         right: 0;
-        transform: rotate(180deg);
+        transform: rotate(var(--transform));
     }
 
     .navbar-nav .nav-item .sub-menu.collapse:not(.show) {
