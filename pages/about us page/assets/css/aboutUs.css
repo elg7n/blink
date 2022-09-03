@@ -1,0 +1,101 @@
+/* for other pages header */
+.others {
+    background-color: #fff !important;
+}
+
+.others .button .signin {
+    color: #151515;
+}
+
+.others .button .signin:hover {
+    color: #3080e3;
+}
+
+.others .button .signup {
+    background-color: #3080E3 !important;
+    color: #fff !important;
+}
+
+.others .button .signup:hover {
+    background-color: #fd723b !important;
+}
+
+/* passage */
+.passage {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    z-index: 2;
+    text-align: left;
+    background: linear-gradient(-45deg, #fd723b, #3080e3);
+    box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.075);
+}
+
+.passage .passage-content {
+    position: relative;
+}
+
+.passage .passage-content .page-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+
+}
+
+.passage .passage-nav li {
+    position: relative;
+    padding-right: 14px;
+    margin-right: 14px;
+    color: #fff;
+}
+
+.passage .passage-nav li:first-child::after {
+    content: "\ea62";
+    font-family: lineIcons;
+    font-size: 11px;
+    position: absolute;
+    top: 3px;
+    right: -7px;
+}
+
+.passage .passage-nav li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.passage .passage-nav li,
+.passage .passage-nav li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.passage .passage-nav li a {
+    position: relative;
+}
+
+.passage .passage-nav li a:hover {
+    color: #3080e3;
+}
+
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    .passage {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .passage .passage-content .page-title {
+        font-size: 16px;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .passage .passage-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
