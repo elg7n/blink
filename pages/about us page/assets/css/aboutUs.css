@@ -143,3 +143,18 @@
     margin-top: 15px;
     color: #cecece;
   }
+
+  /* testimonials section for about us */
+  .testimonials.addition .single-testimonial .shape1 {
+    top: 0;
+    left: -30px;
+    height: 90px;
+    width: 90px;
+  }
+  
+  .testimonials.addition .single-testimonial .shape2 {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: auto;
+  }
