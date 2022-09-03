@@ -13,8 +13,8 @@ window.onscroll = function () {
     } else {
         scrollUp.style.display = "none";
     }
-    scrollUp.addEventListener("click",function(){
-        window.pageYOffset=0;
+    scrollUp.addEventListener("click", function () {
+        window.pageYOffset = 0;
     })
 };
 
@@ -38,4 +38,9 @@ $(".owl-carousel").owlCarousel({
             items: 2,
         }
     }
+});
+// hamburger open/close
+let navbarToggler = document.querySelector(".mobile-menu-btn");
+navbarToggler.addEventListener('click', function () {
+    navbarToggler.classList.toggle("active");
 });

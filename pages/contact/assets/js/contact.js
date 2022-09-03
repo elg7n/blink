@@ -10,3 +10,9 @@ window.onscroll = function () {
         window.pageYOffset=0;
     })
 };
+
+// hamburger open/close
+let navbarToggler = document.querySelector(".mobile-menu-btn");
+navbarToggler.addEventListener('click', function () {
+    navbarToggler.classList.toggle("active");
+});
