@@ -1,3 +1,13 @@
+// on load
+window.onload = function () {
+    window.setTimeout(load, 500);
+}
+
+function load() {
+    document.querySelector('.loader-wrapper').style.opacity = '0';
+    document.querySelector('.loader-wrapper').style.display = 'none';
+}
+// ----
 window.onscroll = function () {
     
     var scrollUp = document.querySelector(".scroll-top");
