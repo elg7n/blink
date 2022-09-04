@@ -1,0 +1,6 @@
+.single-service{
+    background-color: transparent !important;
+}
+.single-service:hover{
+    background-color: white !important;
+}
